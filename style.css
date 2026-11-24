@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+:root {
+    --cor-primaria: #1F242D;
+    --cor-secundaria: #323946;
+    --cor-da-fonte: #FFFFFF;
+    --cor-fonte-vermelha: #A30000;
+
+
+}
+
+
+* {
+    font-family: 'inter';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #FFFFFF;
+}
+
+p {
+    font-size: 20px;
+}
+
+h2 {
+    font-size: 40px;
+
+}
+
+h3 {
+    font-size: 30px;
+}
+
+
+
+.span {
+    color: var(--cor-fonte-vermelha);
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    background: transparent;
+    transition: transform 0.3s ease;
+    transition: transform 0.3s ease;
+
+}
+
+button,ico:hover {
+    transform: scale(1.08);
+}
+
+.ico:hover {
+    transform: scale(1.08);
+}
+
+.home {
+    background-color: #1F242D;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 1280px;
+
+    .texto-home {
+        margin-top: 30px;
+    }
+
+}
+
+.home-esquerda {
+    width: 1100px;
+    height: auto;
+    padding-left: 60px;
+}
+
+.home-botoes {
+    margin-top: 15px;
+    display: flex;
+    gap: 25px;
+    padding-top: 20px;
+    padding-left: 30px;
+}
+
+.home-botoes img {
+    width: 45px;
+    height: auto;
+}
+
+.home-botoes-baixo img {
+    width: 250px;
+    display: flex;
+    padding: px;
+    margin: 0px;
+}
+
+.home-direita img {
+    padding-right: 200px;
+    padding-bottom: 30px;
+    width: 750px;
+    height: auto;
+}
+
+.navbar {
+    background-color: #1F242D;
+    display: flex;
+    justify-content: end;
+    padding: 60px;
+    align-items: center;
+    font-size: 23px;
+    padding-top: 20px;
+    padding-right: 100px;
+    gap: 30px;
+}
+
+.logo-nav {
+    display: flex;
+    margin-right: auto;
+    font-size: 25px;
+}
+
+.navbar a {
+    text-decoration: none;
+}
+
+.sobre {
+    width: 100%;
+    height: 1348px;
+    background-color: var(--cor-secundaria)
+}
+
+
+.servicos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 1348px;
+    background-color: var(--cor-primaria)
+}
+
+.projetos {
+    width: 100%;
+    height: 1348px;
+    background-color: var(--cor-secundaria)
+}
+
+.sobre {
+    display: flex;
+    align-items: center;
+    padding-top: 50px;
+
+
+}
+
+.sobre img {
+    padding-left: 70px;
+    width: 550px;
+    height: auto;
+}
+
+.sobre-texto-direita {
+    padding-left: 200px;
+    width: 1500px;
+}
+
+.txt-front {
+    margin-top: 40px;
+}
+
+
+.cards {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.servicos-cards {
+    display: flex;
+    gap: 60px;
+}
+
+.cards img {
+    width: 400px;
+    height: auto;
+}
+
+.txt-projetos {
+    display: flex;
+    justify-content: center;
+    padding: 80px;
+    padding-top: 150px;
+}
+
+.cards-cima {
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.cards-baixo {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.cards-cima img {
+    width: 500px;
+    height: auto;
+}
+
+.cards-baixo img {
+    width: 500px;
+    height: auto;
+
+}
+
+.contato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor-primaria);
+    width: 100%;
+    height: 80px;
+}
+
+.btn-sobre img {
+    width: 250px;
+    height: auto;
+    padding: 0px;
+
+}
+
+.titulo-servicos {
+    margin-bottom: 300px;
+}
+
+.btn-servicos img {
+    width: 250px;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10px;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.navbar a,
+.navbar a strong {
+    text-decoration: none;
+    color: var(--cor-da-fonte);
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover,
+.navbar a:hover strong {
+    color: var(--cor-fonte-vermelha);
+}
+
+
+.home-direita img {
+    padding-right: 200px;
+    padding-bottom: 30px;
+    width: 750px;
+    height: auto;
+    animation: flutuar 2.7s ease-in-out infinite;
+}
+
+
+@keyframes flutuar {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+
+        100% {
+            transform: translateY(0);
+        }
